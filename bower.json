@@ -7,7 +7,9 @@
   "description": "An interactive data dashboard for CD meetings",
   "main": "index.html",
   "keywords": [
-    "CD", "d3js", "dcjs"
+    "CD",
+    "d3js",
+    "dcjs"
   ],
   "license": "Commercial",
   "homepage": "http://yinchanted.github.io/cd_demo",
@@ -21,7 +23,8 @@
   "dependencies": {
     "d3": "~3.5",
     "dcjs": "~2.0.0",
-    "crossfilter": "~1.3.11"
+    "crossfilter": "~1.3.11",
+    "bootstrap": "~3.3.6"
   },
   "private": true
 }
