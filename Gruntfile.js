@@ -1,6 +1,8 @@
-'use strict';
+//#!/usr/bin/node
 
 module.exports = function(grunt){
+    "use strict";
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -14,8 +16,16 @@ module.exports = function(grunt){
 							}
 						},
             output: ['debug']
-        }
+        },
+
+				jshint: {
+					options: {
+					},
+					files: ['./*/*.js']
+				}
     });
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.registerTask('default', ['clean']);
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+
+    grunt.registerTask('default', ['clean','jshint']);
 };
