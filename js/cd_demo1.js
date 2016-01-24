@@ -239,7 +239,7 @@ d3.csv("data/cd_demo.csv", function (data) {
         .colorAccessor(function(d){
             return rolesNumber.get( nameRoles.get(d.key) );
         })
-        .labelOffsetX(0)
+        .labelOffsetX(5)
         .xAxis().ticks(1).tickFormat(d3.format("d"));
 
     dc.renderAll();
