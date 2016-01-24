@@ -242,6 +242,7 @@ d3.csv("data/cd_demo.csv", function (data) {
         .labelOffsetX(5)
         .xAxis().ticks(1).tickFormat(d3.format("d"));
 
+    dc.filterAll();
     dc.renderAll();
 });
 
