@@ -176,7 +176,7 @@ d3.csv("data/cd_demo.csv", function (data) {
         .elasticX(true)
         //.ordinalColors(['#9ecae1']) // light blue
         .colors(d3.scale.category20())
-        .labelOffsetX(0)
+        .labelOffsetX(5)
         .xAxis().ticks(5).tickFormat(d3.format("d"));
     
     // 05 dimension, rowchart, BUSINESS_FOCUS  
@@ -194,7 +194,7 @@ d3.csv("data/cd_demo.csv", function (data) {
         .elasticX(true)
         //.ordinalColors(['#9ecae1']) // light blue
         .colors(d3.scale.category10())
-        .labelOffsetX(0)
+        .labelOffsetX(5)
         .xAxis().ticks(4).tickFormat(d3.format("d"));
     
     // 06 dimension, rowchart, role  
